@@ -1,0 +1,22 @@
+{
+    "name": "cordova-plugin-log-remote-export",
+    "version": "1.0.0",
+    "description": "Cordova plugin for exporting logcat content",
+    "keywords": [
+        "cordova",
+        "remote",
+        "logging",
+        "log"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/curbngo/cordova-plugin-log-remote-export"
+    },
+    "cordova": {
+        "id": "cordova-plugin-log-remote-export",
+        "platforms": [
+            "android"
+        ]
+    }
+}

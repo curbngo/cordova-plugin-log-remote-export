@@ -1,0 +1,20 @@
+<plugin id="cordova-plugin-log-remote-export" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>LogRemoteExport</name>
+    <description>Cordova plugin for exporting logcat content</description>
+    <license>MIT</license>
+    <keywords>cordova, remote, logcat, log, logs</keywords>
+
+	<js-module name="LogRemoteExport" src="www/LogRemoteExport.js">
+		<clobbers target="LogRemoteExport" />
+	</js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LogRemoteExport">
+                <param name="android-package" value="logremoteexport.cordova.LogRemoteExport" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/LogRemoteExport.java" target-dir="src/log-remote-export/cordova" />
+    </platform>
+</plugin>
